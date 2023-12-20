@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="30" /> -->
+    <link rel="icon" href="imgs/Aldo Gonzalez.png" />
+    <title>Bookmarker
+    </title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--body font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    
+
+    <!--  -->
+
+    <!-- bootstrap link  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- css link -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- media link -->
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+
+  <body>
+    <div class="mainForm container mx-auto   p-3 d-flex justify-content-center align-items-center flex-column">
+      <h1 class="text-center my-5  position-relative ">Bookmarker</h1>
+
+      <div class="dotLine pt-3 pb-2"></div>
+
+      <h2 class="text-center m-4 fs-4 "><i class="fa-solid fa-bookmark px-2"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark px-2"></i></h2>
+      
+
+      <div class="w-100 p-3">
+        <label for="siteNameInput" class="fw-bold pb-2"><i class="fa-solid fa-book-bookmark"></i>  Site Name</label>
+        <input type="text" id="siteNameInput" class="form-control" />
+      </div>
+
+      <div class="w-100 p-3">
+        <label for="siteUrlInput " class="fw-bold pb-2"><i class="fa-solid fa-link"></i>  Site URL</label>
+        <input type="url" id="siteUrlInput" class="form-control "  placeholder="https://example.com" oninput=" "/>
+      </div>
+
+      
+      
+      <button class=" btnSubmit btn   mt-3  m-auto px-5 text-white fw-bold" id="btn" onclick="addProduct(  urlLocate())">
+        Submit
+      </button>
+
+      <div class="dotLine pt-3 pb-2"></div>
+
+
+      <table class="table my-3 text-center">
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Web Site Name </th>
+            <th>Visit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+
+        <tbody id="tableBody">
+
+        </tbody>
+      </table>
+    </div>
+
+
+    <script src="jv/bootstrap.bundle.min.js"></script>
+    <script src="jv/index.js"></script>
+  </body>
+</html>
